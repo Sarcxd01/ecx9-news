@@ -16,130 +16,170 @@
             font-family: "Courier New", monospace;
         }
         .container {
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 20px;
         }
-        header {
-            border: 3px solid #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            color: #888;
-            font-size: 12px;
-        }
-        .news-item {
+
+        /* Header */
+        .header {
             border: 2px solid #fff;
-            padding: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .header h1 {
+            font-size: 28px;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+        }
+        .header .subtitle {
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        /* Platform Bar */
+        .platform-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #fff;
+        }
+        .platform-icon {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .platform-label {
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-left: auto;
+        }
+
+        /* Date Bar */
+        .date-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #fff;
             margin-bottom: 15px;
+        }
+        .date-line {
+            flex: 1;
+            height: 8px;
+            background-color: #fff;
+            margin-right: 15px;
+        }
+        .date-text {
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* News Items */
+        .news-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #fff;
             cursor: pointer;
             transition: background-color 0.2s;
         }
-        .news-item:hover,
-        .news-item.active:hover {
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-title-bar {
+            height: 10px;
             background-color: #fff;
-            color: #000;
+            margin-bottom: 8px;
+            width: 60%;
         }
-        .news-item:hover .news-meta,
-        .news-item:hover .category {
-            color: #444;
-        }
-        .news-item:hover .news-content {
-            color: #000;
-            border-top-color: #ccc;
-        }
-        .news-item:hover .author {
-            color: #666;
-        }
-        .news-title {
-            font-size: 16px;
-            font-weight: bold;
+        .news-meta-bar {
+            height: 6px;
+            background-color: #fff;
             margin-bottom: 5px;
-        }
-        .news-meta {
-            font-size: 10px;
-            color: #888;
+            width: 40%;
         }
         .news-content {
             display: none;
             margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid #444;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 1.6;
+            color: #ccc;
+            border-top: 1px solid #444;
+            padding-top: 10px;
         }
         .news-item.active .news-content {
             display: block;
         }
-        .news-item.active {
-            background-color: #fff;
-            color: #000;
-        }
-        .news-item.active .news-content {
-            color: #000;
-            border-top-color: #ccc;
-        }
-        .news-item.active .news-meta {
-            color: #444;
-        }
-        .news-item.active .category {
-            color: #008888;
-        }
-        .news-item.active .author {
-            color: #666;
-        }
-        .category {
-            color: #0ff;
-            font-size: 10px;
-        }
-        .author {
-            color: #888;
-            font-size: 10px;
-        }
-        footer {
-            border-top: 2px solid #fff;
-            padding-top: 10px;
-            margin-top: 20px;
-            font-size: 10px;
-            color: #888;
+
+        /* Footer */
+        .footer {
             text-align: center;
-        }
-        .api-link {
-            color: #0ff;
-            text-decoration: none;
-        }
-        .api-link:hover {
-            text-decoration: underline;
+            padding: 20px 0;
+            font-size: 12px;
+            color: #888;
+            border-top: 2px solid #fff;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>ECX-9 Official</h1>
-            <div class="subtitle">win.me - News & Updates</div>
-        </header>
-        
-        <div id="news-container">
-            <p>Loading news...</p>
+        <!-- Header -->
+        <div class="header">
+            <h1>ECX-9</h1>
+            <div class="subtitle">Official</div>
+            <div class="subtitle" style="margin-top: 10px;">news - Update</div>
         </div>
-        
-        <footer>
-            <p>ECX-9 &copy; 2026</p>
-        </footer>
+
+        <!-- Platform Bar -->
+        <div class="platform-bar">
+            <div class="platform-icon">▶</div>
+            <div class="platform-icon">⊞</div>
+            <div class="platform-icon">⚡</div>
+            <div class="platform-icon">♦</div>
+            <div class="platform-icon">@</div>
+            <div class="platform-icon">⚙</div>
+            <span class="platform-label">PLATforme</span>
+        </div>
+
+        <!-- Date Bar -->
+        <div class="date-bar">
+            <div class="date-line"></div>
+            <span class="date-text">2026-06-22</span>
+        </div>
+
+        <!-- News Items -->
+        <div id="news-container">
+            <div class="news-item">
+                <div class="news-title-bar"></div>
+                <div class="news-meta-bar"></div>
+            </div>
+            <div class="news-item">
+                <div class="news-title-bar" style="width: 80%;"></div>
+                <div class="news-meta-bar" style="width: 50%;"></div>
+            </div>
+            <div class="news-item">
+                <div class="news-title-bar" style="width: 70%;"></div>
+                <div class="news-meta-bar" style="width: 45%;"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            ECX-9 © 2026
+        </div>
     </div>
 
     <script>
         fetch('api.json')
             .then(response => response.json())
             .then(data => {
-                document.querySelector('.subtitle').textContent = 
-                    'win.me - News & Updates | Last updated: ' + data.last_updated;
+                document.querySelector('.date-text').textContent = data.last_updated;
                 
                 const container = document.getElementById('news-container');
                 container.innerHTML = '';
@@ -148,13 +188,13 @@
                     const div = document.createElement('div');
                     div.className = 'news-item';
                     div.innerHTML = `
-                        <div class="news-title">${item.title}</div>
-                        <div class="news-meta">
-                            <span class="category">[${item.category}]</span>
-                            <span class="author">${item.author}</span>
-                            - ${item.date}
+                        <div class="news-title-bar" style="width: ${40 + Math.random() * 40}%;"></div>
+                        <div class="news-meta-bar" style="width: ${30 + Math.random() * 20}%;"></div>
+                        <div class="news-content">
+                            <strong>${item.title}</strong><br><br>
+                            ${item.content}<br><br>
+                            <span style="color: #666;">${item.author} - ${item.date}</span>
                         </div>
-                        <div class="news-content">${item.content}</div>
                     `;
                     div.addEventListener('click', () => {
                         div.classList.toggle('active');
@@ -163,8 +203,7 @@
                 });
             })
             .catch(error => {
-                document.getElementById('news-container').innerHTML = 
-                    '<p>Error loading news. Please try again later.</p>';
+                console.log('Using static layout');
             });
     </script>
 </body>
