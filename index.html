@@ -40,9 +40,21 @@
             cursor: pointer;
             transition: background-color 0.2s;
         }
-        .news-item:hover {
+        .news-item:hover,
+        .news-item.active:hover {
             background-color: #fff;
             color: #000;
+        }
+        .news-item:hover .news-meta,
+        .news-item:hover .category {
+            color: #444;
+        }
+        .news-item:hover .news-content {
+            color: #000;
+            border-top-color: #ccc;
+        }
+        .news-item:hover .author {
+            color: #666;
         }
         .news-title {
             font-size: 16px;
@@ -65,7 +77,21 @@
             display: block;
         }
         .news-item.active {
-            background-color: #222;
+            background-color: #fff;
+            color: #000;
+        }
+        .news-item.active .news-content {
+            color: #000;
+            border-top-color: #ccc;
+        }
+        .news-item.active .news-meta {
+            color: #444;
+        }
+        .news-item.active .category {
+            color: #008888;
+        }
+        .news-item.active .author {
+            color: #666;
         }
         .category {
             color: #0ff;
