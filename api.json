@@ -1,0 +1,47 @@
+{
+  "site_name": "ECX-9 Official",
+  "site_url": "https://ecx9.dev",
+  "last_updated": "2026-06-22",
+  "news": [
+    {
+      "id": 1,
+      "title": "win.me v1.0 Released!",
+      "date": "2026-06-22",
+      "category": "Release",
+      "content": "We are excited to announce the official release of win.me v1.0! This retro desktop simulator brings back the classic Windows 95 experience with a modern twist. Download now and explore the desktop!",
+      "author": "ECX-9 Team"
+    },
+    {
+      "id": 2,
+      "title": "New Notepad Feature Update",
+      "date": "2026-06-20",
+      "category": "Update",
+      "content": "Notepad has been updated with a new Save As dialog, file management system, and support for up to 5 player files. Your notes are now saved automatically!",
+      "author": "ECX-9 Team"
+    },
+    {
+      "id": 3,
+      "title": "Find Program Now Available",
+      "date": "2026-06-18",
+      "category": "Feature",
+      "content": "The Find program is now available on the desktop. Search for apps and files quickly. Try searching for 'Info.me.txt' to learn more about win.me!",
+      "author": "ECX-9 Team"
+    },
+    {
+      "id": 4,
+      "title": "Behind the Scenes: Crane Game",
+      "date": "2026-06-15",
+      "category": "Article",
+      "content": "Ever wondered how the Crane game works? In this article, we dive deep into the physics and design decisions behind the classic arcade experience. The crane holds the key to many secrets...",
+      "author": "Dev Diary"
+    },
+    {
+      "id": 5,
+      "title": "Community Spotlight",
+      "date": "2026-06-12",
+      "category": "Community",
+      "content": "Thank you to all the players who have been exploring win.me! We love seeing your screenshots and feedback. Keep sharing your experience with us!",
+      "author": "ECX-9 Team"
+    }
+  ]
+}
